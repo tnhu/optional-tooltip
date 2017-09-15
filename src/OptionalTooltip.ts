@@ -1,3 +1,7 @@
+//
+// This file can not be used since compiler compiles to code that can't be executed by browsers.
+// Use OptionalTooltip.js instead
+//
 try {
   class OptionalTooltip extends HTMLElement {
     attributeChangedCallback(attributeName, oldValue, newValue, namespace) {
@@ -14,7 +18,7 @@ try {
 
     adjustTooltip() {
       var ATTR = 'data-tooltip'
-      var child = this.firstElementChild
+      var child = this.firstElementChild as HTMLElement
 
       if (child && child.scrollWidth > child.offsetWidth) {
         this.setAttribute(ATTR, this.getAttribute('data'))

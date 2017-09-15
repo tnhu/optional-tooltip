@@ -76,3 +76,8 @@ try {
 } catch (e) {
   console.error(e);
 }
+
+// TODO
+// Load polyfill () if customElements does not exist
+// - https://github.com/webcomponents/custom-elements
+// - https://cdn.rawgit.com/webcomponents/custom-elements/master/custom-elements.min.js
