@@ -85,10 +85,3 @@ if (window.customElements) {
   script.onload = init
   document.head.appendChild(script)
 }
-
-var data = { foo: 'bar' }
-
-<optional-tooltip class=`tooltip--top` data=`${data}`>
-</optional-tooltip>
-
-attrs.class === "tooltip-top"
